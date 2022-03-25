@@ -6,7 +6,7 @@
     document.addEventListener("DOMContentLoaded", function () {
 
         let c = document.getElementById("clock");
-
+        c.style.color = "red";
         //setTimeout(updateClock, 2000);
         setInterval(updateClock, 1000);
 
@@ -15,7 +15,7 @@
             let date = new Date();
             let h = date.getHours();
             let m = date.getMinutes();
-            let s = date.getSeconds();
+            let s = date.getSeconds()+1;
 
             if (m < 10) {
                 m = "0" + m;
@@ -124,9 +124,10 @@
 
 // map
 
-let mapAPIKey = "AuQCGP7ffmwMd15Uhx5lnCscxViQ1OJL8fPtm1xyeTurLcWYag1BEzle9VDqSUYC";
+let mapAPIKey = "AvYW7x9hfSYc-EqfKIhh5y4ruakNMhtrk2ubRnF6tvY5qHq-6_hTOekcm6Hb6bs7";
 
 let map;
+let infobox;
 
 function GetMap() {
 
@@ -158,7 +159,7 @@ function GetMap() {
     });
 
 
-    let infobox = new Microsoft.Maps.Infobox(map.getCenter(), {
+    infobox = new Microsoft.Maps.Infobox(map.getCenter(), {
         visible: false
     });
 
@@ -185,8 +186,8 @@ function GetMap() {
         description: 'Tore koht',
     };
 
-    Microsoft.Maps.Events.addHandler(tartu, 'click', pushpinClicked);
-    Microsoft.Maps.Events.addHandler(viljandi, 'click', pushpinClicked);
+    Microsoft.Maps.Events.addHandler(tartu, "click", pushpinClicked);
+    Microsoft.Maps.Events.addHandler(viljandi, "click", pushpinClicked);
 
     map.entities.push(tartu);
     map.entities.push(viljandi);
