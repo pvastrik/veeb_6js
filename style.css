@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+/*
+font-family: 'PT Sans', sans-serif;
+font-family: 'PT Serif', serif;
+*/
+
+section, div {
+    padding: 10px;
+}
+
+hr {
+    padding-top: 20px;
+}
+
+h3 { 
+    font-family: 'PT Serif', serif;
+    font-size: 18px;
+    margin: 2px;    
+}
+
+.box {
+    padding: 5px;
+    margin-left: 20px;
+}
+
+p, label, form {
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    margin: 2px;
+}
+
+#form {
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-field label {
+  display: inline-block;
+  width: 115px;
+  text-align: right;
+}
+
+#dropdown {
+    margin-left: 10px;
+    padding: 5px;
+    width: 100px;
+}
+
+.hind {
+    float: right;
+}
+
+#calc {
+    margin-left: 5px;
+}
+
+#clock {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'PT Serif', serif;
+    letter-spacing: 3px;
+}
+
+input[type=submit] {
+    background-color: #008000;
+    color: #FFF;
+    border-radius: 15px;
+    border: none;
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#map {
+    position: relative;
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+}
+
+/* Minu looming (muutsin ka natuke suurusi ja vahesid üleval pool)*/
+#form-radiobutton {
+    border: solid green 2px;
+    border-radius: 10px;
+
+}
+
+.radio {
+
+}
